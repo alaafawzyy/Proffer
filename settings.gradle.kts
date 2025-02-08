@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Proffer"
 include(":app")
- 
+include(":data")
+include(":domain")
