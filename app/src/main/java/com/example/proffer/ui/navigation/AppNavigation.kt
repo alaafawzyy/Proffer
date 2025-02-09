@@ -9,7 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-
+import com.example.proffer.ui.presentation.on_boarding.OnBoardingScreen
+import com.example.proffer.ui.presentation.sign_up.SignUpScreen
 
 
 @Composable
@@ -33,24 +34,24 @@ fun AppNavigation(modifier: Modifier = Modifier) {
 //                onNavigateToVerification = { navController.navigate(Screen.Verification.route) }
 //            )
 //        }
-//        composable(Screen.OnBoarding.route) {
-//            OnBoardingScreen(
-//                modifier = modifier,
-//                navController = navController,
-//                onIdentityClick = { navController.navigate(Screen.SignUp.route) },
-//                onNavigateToLogin = { navController.navigate(Screen.Login.route) },
-//
-//            )
-//        }
-//
-//        composable(Screen.SignUp.route) {
-//            SignUpScreen(
-//                modifier = modifier,
-//                navController = navController,
-//                onNavigateToLogin = { navController.navigate(Screen.Login.route) }
-//            )
-//        }
-//
+        composable(Screen.OnBoarding.route) {
+            OnBoardingScreen(
+                modifier = modifier,
+                navController = navController,
+                onIdentityClick = { navController.navigate(Screen.SignUp.route) },
+                onNavigateToLogin = { navController.navigate(Screen.Login.route) },
+
+            )
+        }
+
+        composable(Screen.SignUp.route) {
+            SignUpScreen(
+                modifier = modifier,
+                navController = navController,
+                onNavigateToLogin = { navController.navigate(Screen.Login.route) }
+            )
+        }
+
 //        composable(Screen.Verification.route) {
 //            VerificationScreen(
 //                modifier = modifier,
