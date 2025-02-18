@@ -7,11 +7,13 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.0"
+ok2curl = "0.7.0"
 composeBom = "2024.04.01"
 appcompat = "1.7.0"
 material = "1.12.0"
 navigationCompose = "2.8.6"
 [libraries]
+ok2curl = { group = "com.github.mrmike", name = "ok2curl", version.ref = "ok2curl" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
